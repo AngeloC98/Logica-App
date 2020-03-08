@@ -7,12 +7,224 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/var_a"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/var_b"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvAAndB"
+        app:layout_constraintStart_toEndOf="@+id/tvA"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvAAndB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/var_a_and_b"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvB"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvRow1T1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_t"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRow1T2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvA" />
+
+    <TextView
+        android:id="@+id/tvRow1T2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_t"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAnswer1"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T1"
+        app:layout_constraintTop_toBottomOf="@+id/tvB" />
+
+    <EditText
+        android:id="@+id/etAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/auto_fill"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T2"
+        app:layout_constraintTop_toBottomOf="@+id/tvAAndB" />
+
+    <TextView
+        android:id="@+id/tvRow1T"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_t"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRow1T2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow1T1" />
+
+    <TextView
+        android:id="@+id/tvRow2F1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_f"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAnswer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T1"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow1T2" />
+
+    <EditText
+        android:id="@+id/etAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/auto_fill"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T2"
+        app:layout_constraintTop_toBottomOf="@+id/etAnswer1" />
+
+    <TextView
+        android:id="@+id/tvRow3F1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_f"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRow1T2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow1T" />
+
+    <TextView
+        android:id="@+id/tvRow3T1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_t"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAnswer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T1"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow2F1" />
+
+    <EditText
+        android:id="@+id/etAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/auto_fill"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T2"
+        app:layout_constraintTop_toBottomOf="@+id/etAnswer2" />
+
+    <TextView
+        android:id="@+id/tvRow4F1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_f"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRow1T2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow3F1" />
+
+    <TextView
+        android:id="@+id/tvRow4F4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/var_f"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAnswer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T1"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow3T1" />
+
+    <EditText
+        android:id="@+id/etAnswer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/auto_fill"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvRow1T2"
+        app:layout_constraintTop_toBottomOf="@+id/etAnswer3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRow4F4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

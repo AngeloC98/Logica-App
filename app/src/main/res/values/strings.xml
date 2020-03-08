@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Logica App</string>
+    <string name="app_title">Conjunction (AND)</string>
+    <string name="var_a">A</string>
+    <string name="var_b">B</string>
+    <string name="var_a_and_b">A^B</string>
+    <string name="var_t">T</string>
+    <string name="var_f">F</string>
+    <string name="auto_fill">T/F</string>
+    <string name="button_submit">Submit</string>
+    <string name="toast_correct">The correct number of answers is: %d</string>
 </resources>
